@@ -6,7 +6,7 @@ The Amazon Vine program is a service that allows manufacturers and publishers to
 
 This project was focused on analyzing Amazon reviews written by members of the paid Amazon Vine program. 
 
-A subset of approximately 50 datasets containing book rewviews was extract, then transformed using ETL process, connected to an AWS RDS instance, and loaded into pgAdmin. Next, Pandas was used to determine if there is any bias toward favorable reviews from Vine members.
+A subset of approximately 50 datasets containing book reviews was extracted, then transformed using ETL process, connected to an AWS RDS instance, and loaded into pgAdmin. Next, Pandas was used to determine if there is any bias toward favorable reviews from Vine members.
 
 ## Resources
 - Data Source: [Amazon Vine Reviews](https://s3.amazonaws.com/amazon-reviews-pds/tsv/index.txt)
@@ -14,6 +14,13 @@ A subset of approximately 50 datasets containing book rewviews was extract, then
 
 ## Results
 
-- 51.06% of paid reviews are 5-stars and 38.7% of unpaid reveiws are 5-stars.
+![Total Reviews](https://github.com/MariaGarzon/Amazon_Vine_Analysis/blob/ce87d625528ec6fce8ad289958470440676ed889/Images/Total_Reviews.png)
+
+![Percent unpaid](https://github.com/MariaGarzon/Amazon_Vine_Analysis/blob/ce87d625528ec6fce8ad289958470440676ed889/Images/Percentage_Unpaid.png)
+
+- Out of 403807 total reviews 60.15% of unpaid reviews are 5-stars. 
+- Unfortunately, an analysis to determine the bias could not be made as the dataset contained 0 paid vine reviews. 
 
 ## Summary 
+ 
+This project could not be used to draw a conclusion from our objective but the model can be implemented to other datasets and analysis that have a similar aim. 
